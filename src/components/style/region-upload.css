@@ -1,0 +1,151 @@
+/*Title style*/
+.title-region {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.5rem;
+  color: #fff;
+  display: inline-block;
+  height: 50px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+
+input {
+  margin: 5px;
+}
+
+form {
+  font-family: 'Bebas Neue', cursive;
+}
+
+/*Pop up*/
+.region-upload-pop-up-container {
+  width: 100%;
+  z-index: 1002;
+}
+
+/*Region map*/
+.region-creation-map {
+  height: 40vh;
+  min-height: 120px;
+  width: 50%;
+  display: block;
+  position: relative;
+  top: 40px;
+  padding-bottom: 10px;
+}
+
+.coord-link a,
+.footer-link a:hover,
+.footer-link a:active,
+.footer-link a:visited,
+p {
+  color: white;
+}
+
+/*Form for the different fields*/
+.region-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Horizontally center content */
+}
+
+.select-container {
+  padding-left: 0.4rem;
+}
+
+@keyframes shine {
+  0% {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+  }
+
+  50% {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+  }
+
+  100% {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+  }
+}
+
+/*Tooltip elements*/
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  /* Adjust the margin as needed */
+  vertical-align: 10px;
+  /* Adjust the vertical alignment as needed */
+}
+
+.question-icon {
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  color: #fff;
+  border: 2px solid white;
+  /* Add white border */
+  border-radius: 50%;
+  /* Set border-radius to 50% for a circular shape */
+  width: 20px;
+  /* Adjust the width and height as needed */
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.2rem;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+  width: 300px;
+  /* Adjust the width as needed */
+  text-align: left;
+  z-index: 1;
+}
+
+.tooltip-container:hover .tooltip {
+  display: block;
+}
+
+/*Region upload form styling*/
+.region-upload-form {
+  display: block;
+  top: 20px;
+  padding: 20px;
+}
+
+.region-upload-text {
+  color: black;
+  font-family: "Ser";
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*The region creation table*/
+.region-creation {
+  margin: auto;
+  width: 35%;
+  height: 20%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
+  min-width: 700px;
+}

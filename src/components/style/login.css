@@ -1,0 +1,73 @@
+.login-container {
+  position: static;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+} 
+
+.timeline-title {
+  text-align: center;
+  position: relative;
+  display: block;
+  width: 100%;
+  top: 5%;
+  margin: 0;
+  margin-block: 0;
+  padding: 0;
+}
+
+/* Main login form */
+.login-content {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+  height: 40%;
+  max-height: 400px;
+  max-width: 600px;
+  top: 10%;
+}
+
+.login-center {
+  position: relative;
+  top: 20%;
+}
+
+.login-other-buttons {
+  position: relative;
+  margin-top: 1%;
+}
+
+.login-pop-up-container {
+  position: fixed;
+  z-index: 1002;
+}
+
+.box {
+  margin: auto;
+  width: 475px;
+  height: 300px;
+  padding-top: 5%;
+}
+
+
+@keyframes shine {
+  0% {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media screen and (min-width: 400px) {  
+  .login-container {
+      overflow: hidden;
+  }
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+.register-label {
+    color: #fff;
+}
+
+.register-center {
+  height: 100vh;
+}
+
+.box {
+  margin: auto;
+  width: 475px;
+  height: 300px;
+  padding-top: 5%;
+  margin: auto;
+  } 
+  
+
+@keyframes shine {
+  0% {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+  }
+}

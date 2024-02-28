@@ -1,0 +1,131 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+}
+
+#main-mod-div {
+  margin: 0;
+  padding: 0;
+  min-width: 180vh;
+  min-height: 150vh;
+  width: 100%;
+  position: flex;
+  overflow: auto;
+
+}
+
+#main-mod-div::before {
+  content: '';
+  position: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+
+}
+
+/*Viewport for images*/
+ .mod-uploadedImage{
+  max-width: 100%; 
+  max-height: 100%; 
+  width: 27vh;
+  height: 27vh; 
+  display: block; 
+  margin: 0 auto; 
+} 
+
+
+
+.mod-title {
+  font-family: "inter";
+  scroll-padding-left: 0;
+}
+
+.moderator-sizing {
+  width: 100%;
+
+}
+
+/*This is for the moderator table*/
+.mod-white-background-box {
+  background-color: rgb(163, 163, 163);
+  padding: 5px;
+  border-spacing: 0;
+  /* border-collapse: collapse;
+  border: 1px solid black; */
+  border-radius: 10px;
+}
+
+.split {
+  min-width: fit-content;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin-left: 11rem;
+}
+
+tr {
+  /* border: 1px solid black;
+  box-shadow: 0 0 0 1px black;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-radius: 10px; */
+  text-align: center;
+
+
+  /* border-radius: 2%; */
+  /* Adjust the border radius as needed */
+
+  /* background-color: white; */
+}
+
+
+.mod-spacing {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 14px;
+  font-family: "inter"
+}
+
+.mod-spacing-region {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 50px;
+  border: 1px solid black;
+  /*box-shadow: 0 0 0 1px black;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-radius: 10px; */
+  text-align: center;
+  font-family: "inter";
+  color: black;
+  
+}
+
+.mod-map-padding {
+  padding: 20px;
+}
+
+.button-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.expand-box {
+  padding-bottom: 70%;
+  align-items: center;
+  
+}

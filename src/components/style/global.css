@@ -1,0 +1,266 @@
+/* Font styles for project. Here we defined preset font sizes and colors for various html
+ tags*/
+
+@font-face {
+  font-family: 'Inter';
+  src: url(Fonts/Inter/Inter-VariableFont_slnt,wght.ttf);
+}
+
+@font-face {
+  font-family: 'DMSerif';
+  src: url(Fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: 'DMSerifItalic';
+  src: url(Fonts/DM_Serif_Display/DMSerifDisplay-Italic.ttf);
+}
+
+p, label, h1, h3, h4, li {
+    color: #1f1f4f;
+    font-family: 'DMSerif';
+}
+
+label {
+  font-weight: 600px;
+  font-family: 'Inter';
+  font-size: 14px;
+}
+
+html {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 120px;
+}
+
+h2 {
+  text-align: center;
+  color: #1f1f4f;
+  font-family: 'DMSerif';
+  font-size: 46px;
+  font-weight: 900px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-family: "Inter";
+  font-variation-settings: 'wght' 200;
+  font-size: 20px;
+  color: #fff2ba;
+}
+
+h5 {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 900px;
+  font-variation-settings: 'wght' 800;
+}
+
+h2 + p {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-variation-settings: 'wght' 400;
+  
+}
+
+/* Background for all pages, the light blue gradient*/
+.gradient-background {
+  background: linear-gradient(180deg, #84ceeb, #5680e9); /* Adjust colors as needed */
+  background-size: cover;
+  animation: colorTransition 2s infinite alternate; /* Adjust animation duration and other properties */
+  z-index: -1;
+}
+
+.overlay-text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position:relative;
+  margin-left: 50%;
+  margin-top: 5%;
+  transform: translate(-50%, -50%);
+  background-color: #5468ff;
+  color: #fff;
+  font-size: 30px;
+  width: 125px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Buttong styling for all buttons */
+  .button-style {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #eae7dc 0, #C1C8E4 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #1f1f4f;
+    font-family: 'Inter';
+    font-weight: 540;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-flex;
+    height: 36px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    /* padding-left: 16px;
+    padding-right: 16px; */
+    width: 200px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+  }
+  
+  .button-style:focus {
+    box-shadow: #0000006b 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #0000006e 0 -3px 0 inset;
+  }
+  
+  .button-style:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #00000082 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .button-style:active {
+    box-shadow: rgba(0, 0, 0, 0.3) 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+  
+  /*Footer for the login page, could be used for other pages but not at the moment*/
+  .footer {
+    align-items: center;
+    padding: 0px; /* Add padding as needed */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px;
+    margin: 0 auto; /* Center the container horizontally */
+  }
+
+  .footer-link a, .footer-link a:hover, .footer-link a:active, .footer-link a:visited {
+    color: white;
+  }
+
+  .background-box {
+    background-color: #d0e2e1;
+    padding: 5px;
+    border-spacing: 0;
+    border-radius: 10px;
+  }
+
+
+  /*Nav bar on the top of every page*/
+  .navbar nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    padding: 10px;
+    height: 22px;
+    z-index: 1001; /*Leaflet z-indexes are so dumb, this is necessary to cover the maps on scroll*/
+  }
+  
+  .left-header,
+  .right-header {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .left-header li,
+  .right-header li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .navbar a {
+    font-family: 'DMSerif';
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff2ba; /* Set your desired link color */
+
+  }
+
+  .navbar a:hover {
+    /* background-color: #000000;
+    color: #ffffff; */
+    border-bottom: 1px solid #ffffff !important;
+  }
+
+
+  /*Global pop up css that pop-up.js uses*/
+  .pop-up-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+
+  .pop-up-modal-container {
+    max-height: 30vh;
+    max-width: 500px;
+    width: 60vw;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+    border-spacing: 0;
+    border-radius: 10px;
+    z-index: 1002;
+
+  }
+
+  .pop-up-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
+    padding: 5px 10px;
+    font-family: "Inter";
+    font-size: 14px;
+    font-variation-settings: 'wght' 300;
+    color: #1f1f4f;
+  }
+
+  /*Note that z-index is 1002 to be above leaflet maps*/
+  .pop-up-container {
+    position: fixed;
+    z-index: 1002;
+    border-radius: 10px;
+    border-spacing: 0;
+  }
+  
+
